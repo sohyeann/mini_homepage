@@ -1,0 +1,217 @@
+/*텍스트 폰트*/
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'KOTRA_BOLD-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    background-color: #a3a3a3;
+    background-image: url("../static/images/pattern.png");
+    background-size: 100px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.bookcover{
+    background-color: #b4d1da; /*배경색 설정*/
+    border-radius: 10px; /*모서리 둥글게*/
+    border: 1px solid #738186; /*윤곽선*/
+
+    width: 964px;
+    height: 640px;
+
+    margin: 70px auto;/*좌우 마진을 auto(중앙에 배치), 상하마진을 70px*/
+
+    position: relative;
+}
+
+.bookdot{
+    border-radius: 10px;
+    border: 2px dashed azure;
+
+    width: 940px;
+    height: 620px;
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.page{
+    background-color: azure;
+    border-radius: 10px;
+    border: 1px solid/*dashed도 가능*/ rgb(162, 194, 194);
+
+    width: 910px;
+    height: 590px;
+
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    display:flex;
+}
+
+/*왼쪽 박스*/
+.left-container{
+    flex:0.25;
+    flex-direction:column;
+    margin:20px 20px 20px 20px;
+    display:flex;
+}
+.row1{
+    flex:0.07;
+    text-align:center;
+    font-family: 'NeoDunggeunmo';
+    font-size:15px;
+}
+.visitor{
+    color:red;
+}
+.row2_box{
+    flex:1;
+    border:2px solid rgb(173, 188, 202);
+    background-color:white;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.profile{
+    flex:0.4;
+    margin:15px 0 0 0;
+}
+.img{   /*프로필 사진 설정*/
+    border-radius:10px;
+}
+.intro{   /*소개 글*/
+    flex:1;
+    margin:0px 15px;
+    font-family: 'KyoboHand';
+}
+.name{   /*마지막줄 닉네임*/
+    flex:0.2;
+    margin:0px 15px;
+    font-family: 'KyoboHand';
+    font-size:20px;
+}
+
+
+/*가운데 박스*/
+.mid-container{
+    flex:0.65;
+    flex-direction:column;
+    margin:20px 0px 20px 0px;
+    display:flex;
+}
+.row3{
+    flex:0.07;
+    display:flex;
+}
+.column1{  /*미니홈피 소개이름*/
+    flex:1;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.column2{ /*url 주소*/
+    flex:1;
+    text-align:right;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:12px;
+}
+
+
+.row4_box{
+    flex:1;
+    border-radius:20px;
+    background-color:white;
+    border:2px solid rgb(173, 188, 202);
+    display:flex;
+    flex-direction:column;
+}
+.update_box{   /*업데이트 뉴스 박스*/
+    flex:0.4;
+    display:flex;
+    flex-direction:column;
+    margin:10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height:25px;
+}
+.update{   /*Updated news 폰트*/
+    flex:0.1;
+    border-bottom:2px solid #4aaac7;
+    font-family: 'KOTRA_BOLD-Bold';
+    font-size:20px;
+    color:#4aaac7;
+}
+.news{   
+    flex:0.8;
+    display:flex;
+    font-size:14px;
+}
+.column3{   /*사진첩, 게시판 등 소식*/
+    flex:1;
+}
+.picture{   /*사진첩*/
+    background-color:red;
+    color:white;
+    border-radius:5px;
+}
+.board{   /*게시판*/
+    background-color:dodgerblue;
+    color:white;
+    border-radius:5px;
+}
+
+
+.column4{   /*다이어리, 방명록, 게시판 등 숫자*/
+    flex:1;
+}
+.line1, .line2{   
+    border-bottom:2.5px dotted gray;
+}
+.num{   /*숫자*/
+    font-family: 'NeoDunggeunmo';
+    color:#4190a8;
+}
+
+.miniroom_box{   /*미니룸 박스*/
+    flex:0.8;
+    margin:10px;
+}
+.miniroom{   /*Miniroom 텍스트*/
+    border-bottom:2px solid #4aaac7;
+    font-family: 'KOTRA_BOLD-Bold';
+    font-size:20px;
+    color:#4aaac7;
+}
+
+
+/*오른쪽 박스*/
+.right-container{
+    flex:0.1;
+    border:1px solid black;
+    margin:20px 20px 20px 0px;
+}

@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'establishRoomNo703OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRoomNo703OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.top{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background-color:aquamarine;
+}
+
+
+.title{
+    text-align:center;
+    font-family: 'Jua', sans-serif;
+    font-size:60px;
+}
+
+
+.login{
+    position:absolute;
+    top:10px;
+    right:30px;
+    font-weight:bolder;
+}
+
+
+.join{
+    position:absolute;
+    top:10px;
+    right:120px;
+    font-weight:bolder;
+}
+
+
+.id{
+    position:absolute;
+    top:150px;
+    left:37%;
+    margin:1cm 0 0 0;
+    padding:10px;
+    text-align:center;
+    font-family: 'establishRoomNo703OTF';
+}
+.password{
+    position:absolute;
+    top:320px;
+    left:37%;
+    margin:25px 0;
+    padding:10px;
+    text-align:center;
+    font-family: 'establishRoomNo703OTF';
+}
+
+
+.frame1, .frame2{
+    width:400px;
+    height:70px;
+    font-size:22px;
+    border-radius:10px;
+    font-family: 'establishRoomNo703OTF';
+}
+
+
+.bt{
+    position:absolute;
+    top:520px;
+    left:46%;
+    margin:25px;
+}
+.btn{
+    width:100px;
+    height:45px;
+    font-size:20px;
+    font-weight:bold;
+    background-color:floralwhite;
+    border-radius:5px;
+    font-family: 'establishRoomNo703OTF';
+}
+
+
+body{
+    background-color:azure;
+}
